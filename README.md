@@ -5,7 +5,7 @@ Unity 2D ptojekts, kas demonstrē UI elementu lietojumu spēlē
 - [x] Sākuma ainas izstrādāšana 
 - [x] Iespēja pārslēgties starp ainām
 - [x] Teksta laukus lietojums
-- [ ] Izkrītoša saraksta poga lietojums
+- [x] Izkrītoša saraksta poga lietojums
 - [ ] Apģērbs un Toggle poga
 - [ ] DragAndDrop funkcionalitāte
 - [ ] Skaņas efekti
