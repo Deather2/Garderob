@@ -4,7 +4,7 @@ Unity 2D ptojekts, kas demonstrē UI elementu lietojumu spēlē
 - [x] Projekta uzsākšana un izvietošana GitHub
 - [x] Sākuma ainas izstrādāšana 
 - [x] Iespēja pārslēgties starp ainām
-- [ ] Teksta laukus lietojums
+- [x] Teksta laukus lietojums
 - [ ] Izkrītoša saraksta poga lietojums
 - [ ] Apģērbs un Toggle poga
 - [ ] DragAndDrop funkcionalitāte
