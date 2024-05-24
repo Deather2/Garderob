@@ -6,15 +6,20 @@ using UnityEngine.UI;
 
 public class ShowText : MonoBehaviour
 {
-    string text;
+    int gads;
+    int vecums;
     string vards;
-    public GameObject name;
-    public GameObject age;
+    public InputField name;
+    public InputField age;
     public GameObject displayField;
 
-    public void text()
+    public void getText()
     {
-        vards = name.GetComponent<Text>().text;
-        
+        vards = name.text;
+        gads = int.Parse(age.text);
+        vecums = 2024 - gads;
+            displayField.GetComponent<Text>().text =
+                "Supervaronis " + vards + " ir " + vecums + " gadu vecs!";
+       
     }
 }
