@@ -16,6 +16,8 @@ public class ImageScript : MonoBehaviour
     public GameObject Apavi3;
     public GameObject mainigaisAttels;
     public Sprite[] atteluMasivs;
+    public GameObject scroll1;
+    public GameObject scroll2;
 
     public void izkritosais(int skaitlis){
         if (skaitlis == 0){
@@ -24,6 +26,23 @@ public class ImageScript : MonoBehaviour
             mainigaisAttels.GetComponent<Image>().sprite = atteluMasivs[1];
         }
     }
+
+    public void showScroll1(bool value){
+        scroll1.SetActive(value)
+    }
+
+    public void showScroll2(bool value){
+        scroll2.SetActive(value)
+    }
+
+    public void hideScroll1(bool value){
+        scroll1.SetInactive(value)
+    }
+
+    public void hideScroll2(bool value){
+        scroll2.SetInactive(value)
+    }
+
     public void showKrekli(bool value)
     {
         Krekli1.SetActive(value);
