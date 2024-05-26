@@ -16,31 +16,14 @@ public class ImageScript : MonoBehaviour
     public GameObject Apavi3;
     public GameObject mainigaisAttels;
     public Sprite[] atteluMasivs;
-    public GameObject scroll1;
-    public GameObject scroll2;
+   
 
     public void izkritosais(int skaitlis){
         if (skaitlis == 0){
             mainigaisAttels.GetComponent<Image>().sprite = atteluMasivs[0];
         } if (skaitlis == 1){
-            mainigaisAttels.GetComponent<Image>().sprite = atteluMasivs[1];
+            mainigaisAttels.GetComponent<Image>().sprite = atteluMasivs[1];     
         }
-    }
-
-    public void showScroll1(bool value){
-        scroll1.SetActive(value)
-    }
-
-    public void showScroll2(bool value){
-        scroll2.SetActive(value)
-    }
-
-    public void hideScroll1(bool value){
-        scroll1.SetInactive(value)
-    }
-
-    public void hideScroll2(bool value){
-        scroll2.SetInactive(value)
     }
 
     public void showKrekli(bool value)
@@ -62,5 +45,39 @@ public class ImageScript : MonoBehaviour
         Apavi1.SetActive(value);
         Apavi2.SetActive(value);
         Apavi3.SetActive(value);
+    }
+
+    public Dropdown dropdown;
+    public GameObject scrollView1;
+    public GameObject scrollView2;
+
+    void Start()
+    {
+        
+        scrollView1.SetActive(true);
+        scrollView2.SetActive(false);
+
+       
+        dropdown.onValueChanged.AddListener(OnDropdownValueChanged);
+    }
+
+    void OnDropdownValueChanged(int index)
+    {
+        
+        switch (index)
+        {
+            case 0: 
+                scrollView1.SetActive(true);
+                scrollView2.SetActive(false);
+                break;
+            case 1: 
+                scrollView1.SetActive(false);
+                scrollView2.SetActive(true);
+                break;
+            default:
+                scrollView1.SetActive(true);
+                scrollView2.SetActive(false);
+                break;
+        }
     }
 }
