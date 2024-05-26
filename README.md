@@ -10,4 +10,6 @@ Unity 2D ptojekts, kas demonstrē UI elementu lietojumu spēlē
 - [x] DragAndDrop funkcionalitāte
 - [x] Skaņas efekti
 - [x] Scroll view
-- [ ] Slider elementu lietojums
+- [x] Slider elementu lietojums
+
+![Garderobs](https://e-kupe.ru/wp-content/uploads/2019/07/garderob1.jpg)
